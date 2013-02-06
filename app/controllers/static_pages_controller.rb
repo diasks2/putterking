@@ -17,7 +17,10 @@ class StaticPagesController < ApplicationController
   def video
   end
 
-  def education
+  def math
+  end
+
+  def physics
   end
 
 end

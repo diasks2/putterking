@@ -1,0 +1,26 @@
+<div class="navbar">
+  	<div class="navbar-inner">
+	    <a class="brand" href="#">Putter King</a>
+	    <ul class="nav">
+	      	<li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "Home", root_path %></li>
+	      	<li class="<%= 'active' if current_page?(app_path) %>"><%= link_to "App", app_path %></li>
+	      	<li class="dropdown">
+              	<a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Education <b class="caret"></b></a>
+              	<ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+	                <li class="<%= 'active' if current_page?(education_path) %>"><%= link_to "Math", math_path, :tabindex => "-1" %></li>
+	                <li class="<%= 'active' if current_page?(education_path) %>"><%= link_to "Physics", physics_path, :tabindex => "-1" %></li>
+              	</ul>
+            </li>
+            <li class="dropdown">
+              	<a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown 2 <b class="caret"></b></a>
+              	<ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+	                <li><a tabindex="-1" href="#">Action</a></li>
+	                <li><a tabindex="-1" href="#">Another action</a></li>
+	                <li><a tabindex="-1" href="#">Something else here</a></li>
+	                <li class="divider"></li>
+	                <li><a tabindex="-1" href="#">Separated link</a></li>
+              	</ul>
+            </li>
+	    </ul>
+  	</div>
+</div>

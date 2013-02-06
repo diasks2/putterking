@@ -14,8 +14,7 @@
 
 Experience the game’s high definition graphics as you help Putty in his quest to become the Putter King. Test your putting skills on visually stunning holes from all over the world. Use your creativity and imagination to rack up the hole-in-ones as your adventure takes you everywhere from the Great Wall of China to the Pyramids of Egypt to Mt. Fuji in Japan.  
 
-Compete against your friends and post your scores to Facebook and Twitter as you try to unlock all of the challenging Achievements.  
-Try out all 3 different courses – "Adventures in Japan", "Trip around the World", and "Putty's Playground"
+Compete against your friends and post your scores to Facebook and Twitter as you try to unlock all of the challenging Achievements.  Try out all 3 different courses – "Adventures in Japan", "Trip around the World", and "Putty's Playground".
 
 Putter King App Features  
 • 24 unique, themed holes + 3 user designed holes  

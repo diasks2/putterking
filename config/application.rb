@@ -53,6 +53,20 @@ module Putterking
     # parameters by using an attr_accessible or attr_protected declaration.
     config.active_record.whitelist_attributes = true
 
+    config.action_mailer.smtp_settings = {
+      :address              => "smtp.gmail.com",
+      :port                 => 587,
+      :domain               => "putterking.com",
+      :user_name            => "theputterking@gmail.com",
+      :password             => ENV["Email_Password"],
+      :authentication       => :plain,
+      :enable_starttls_auto => true
+    }
+
+    config.action_mailer.default_url_options = {
+      :host => "putterking.com"
+    }
+
     # Enable the asset pipeline
     config.assets.enabled = true
 

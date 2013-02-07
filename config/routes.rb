@@ -8,4 +8,6 @@ Putterking::Application.routes.draw do
   match '/home', to: 'static_pages#home'
   match '/press', to: 'static_pages#press'
   match '/video', to: 'static_pages#video'
+  match 'contact' => 'contact#new', :as => 'contact', :via => :get
+  match 'contact' => 'contact#create', :as => 'contact', :via => :post
 end

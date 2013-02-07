@@ -56,9 +56,9 @@ module Putterking
     config.action_mailer.smtp_settings = {
       :address              => "smtp.gmail.com",
       :port                 => 587,
-      :domain               => "putterking.com",
+      :domain               => "www.putterking.com",
       :user_name            => "theputterking@gmail.com",
-      :password             => ENV["Email_Password"],
+      :password             => ENV['Email_Password'],
       :authentication       => :plain,
       :enable_starttls_auto => true
     }

@@ -57,7 +57,7 @@ module Putterking
       :address              => "smtp.gmail.com",
       :port                 => 587,
       :domain               => "www.putterking.com",
-      :user_name            => "theputterking@gmail.com",
+      :user_name            => "info@bifluent.com",
       :password             => ENV['Email_Password'],
       :authentication       => :plain,
       :enable_starttls_auto => true

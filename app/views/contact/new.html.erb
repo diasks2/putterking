@@ -1,29 +1,30 @@
-<div>
+<% provide(:title, "Contact Us") %>
+<% provide(:description, "Putter King - Contact Us") %>
+
+<div class="pkwell" id="contact_form_container">
 	<%= form_for @message, :url => contact_path do |form| %>
-	  <fieldset>
-    		<legend>Contact Form</legend>
-	    <div class="field">
-	      <%= form.label :name %>
-	      <%= form.text_field :name, :placeholder => "Name" %>
+    	<h1 class="center">Contact Form</h1>
+    	 <div class="field">
+	      <%= form.label :name, "Name:" %>
+	      <%= form.text_field :name, :placeholder => "Name", :class=> "span5" %>
 	    </div>
 	    
 	    <div class="field">
-	      <%= form.label :email %>
-	      <%= form.text_field :email %>
+	      <%= form.label :email, "Email:" %>
+	      <%= form.text_field :email, :placeholder => "Email", :class=> "span5" %>
 	    </div>
 	    <div class="field">
-	      <%= form.label :subject %>
-	      <%= form.text_field :subject %>
+	      <%= form.label :subject, "Subject:"%>
+	      <%= form.text_field :subject, :placeholder => "Subject", :class=> "span5" %>
 	    </div>
 	    
 	    <div class="field">
-	      <%= form.label :body %>
-	      <%= form.text_area :body %>
+	      <%= form.label :body, "Message:" %>
+	      <%= form.text_area :body, :placeholder => "Message", :class=> "span5", :id => "contact_body_text_area" %>
 	    </div>
-	  </fieldset>
 	  
-	  <fieldset class="actions">
-	    <%= form.submit "Send", :class => "btn" %>
-	  </fieldset>
+	 	<div class="center">
+	    	<%= form.submit "Send", :class => "btn btn-large btn-info" %>
+	  	</div>
 	<% end %>
 </div>	

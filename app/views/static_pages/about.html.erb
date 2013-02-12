@@ -1,1 +1,32 @@
-about.html.erb
+<% provide(:title, "About Us") %>
+<% provide(:description, "Putter King - About Us") %>
+
+<div class="pkwell">
+	<h1 class="center">About Us</h1>
+	<h2>Company Overview</h2>
+	Putter King is developer of the hit iOS and Android miniature golf game Putter King Adventure Golf.  We also host the annual worldwide Putter King Miniature Golf Scavenger Hunt competition and provide various math and physics educational materials on our website.
+
+	<h2>Mission</h2>
+	Bring fun to the children of the world.
+
+	<h2>Trademark Information</h2>
+	<p>
+		<ul>
+			<li>パターキング® / Putter King®</li>
+			<li>パターキング・アドベンチャーゴルフ™ / Putter King Adventure Golf™</li>
+			<li>Putty™</li>
+			<li>Are you a King?™</li>
+			<li>Future Kings™</li>
+			<li>フューチャーキングス™</li>
+		</ul>	
+		are trademarks and service marks of BiFluent LLC (formerly Putter King LLC).
+		<br>
+		<br>
+		Copyright Information<br>
+		© <%= Date.today.strftime("%Y") %> BiFluent LLC<br>
+		All rights reserved.
+		<br>
+		<br>
+		Putter King is owned and operated by BiFluent LLC (<%= link_to "https://www.bifluent.com", "https://www.bifluent.com" %>).
+	</p>
+</div>	

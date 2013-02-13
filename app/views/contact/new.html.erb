@@ -1,10 +1,10 @@
 <% provide(:title, "Contact Us") %>
 <% provide(:description, "Putter King - Contact Us") %>
 
-<div class="pkwell" id="contact_form_container">
+<h1 class="center margin_header">Contact Us</h1>
+<div class="pkwell " id="contact_form_container">
 	<%= form_for @message, :url => contact_path do |form| %>
-    	<h1 class="center">Contact Form</h1>
-    	 <div class="field">
+    	<div class="field">
 	      <%= form.label :name, "Name:" %>
 	      <%= form.text_field :name, :placeholder => "Name", :class=> "span5" %>
 	    </div>

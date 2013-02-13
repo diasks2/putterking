@@ -104,8 +104,11 @@ footer ul li {
   z-index:10;
 }
 
+.margin_header {
+  margin-top: 200px; 
+}
+
 .pkwell {
-  margin-top: 150px; 
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
@@ -125,10 +128,14 @@ footer ul li {
 }
 
 #contact_form_container {
-  margin-left: 300px;
+  margin-left: 250px;
   width: 380px;
 }
 
 #home_container {
   margin-top: 150px; 
+}
+
+.education {
+  margin-top:200px;
 }

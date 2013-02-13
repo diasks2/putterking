@@ -11,10 +11,10 @@ class StaticPagesController < ApplicationController
   def about
   end
 
-  def press
+  def pksh1
   end
 
-  def video
+  def pksh2
   end
 
   def math

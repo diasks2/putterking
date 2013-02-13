@@ -9,11 +9,11 @@
 	            <li class="<%= 'active' if current_page?(physics_path) %>"><%= link_to "Physics", physics_path, :tabindex => "-1" %></li>
 	      	</ul>
 	    </li>
-	    <li class="dropdown">
+	    <li class="dropdown <%= 'active' if current_page?(pksh1_path) || current_page?(pksh2_path) %>">
 	      	<a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">Scavenger Hunt <b class="caret"></b></a>
 	      	<ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
-	            <li><a tabindex="-1" href="#">2011</a></li>
-	            <li><a tabindex="-1" href="#">2012</a></li>
+	            <li class="<%= 'active' if current_page?(pksh1_path) %>"><%= link_to "#PKSH1 2011", pksh1_path, :tabindex => "-1" %></li>
+	            <li class="<%= 'active' if current_page?(pksh2_path) %>"><%= link_to "#PKSH2 2012", pksh2_path, :tabindex => "-1" %></li>
 	      	</ul>
 	    </li>
 	</ul>

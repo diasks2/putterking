@@ -36,4 +36,7 @@ class BlogsController < ApplicationController
   def under
   end
 
+  def winners
+  end
+
 end

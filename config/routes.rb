@@ -36,6 +36,8 @@ Putterking::Application.routes.draw do
   match '/en/content/minigolf-machine', to: 'blogs#machine'
   match '/blog/minigolf-ninjas', to: 'blogs#ninjas', :as => 'ninjas'
   match '/en/content/minigolf-ninjas', to: 'blogs#ninjas'
+  match '/blog/putter-king-adventure-golf-update', to: 'blogs#winners', :as => 'winners'
+  match '/en/content/putter-king-adventure-golf-update', to: 'blogs#winners'
   match '/blog', to: 'blogs#index'
   match 'contact' => 'contact#new', :as => 'contact', :via => :get
   match 'contact' => 'contact#create', :as => 'contact', :via => :post

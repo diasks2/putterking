@@ -2,29 +2,31 @@
 <% provide(:description, "Putter King - Contact Us") %>
 
 <h1 class="center margin_header">Contact Us</h1>
-<div class="pkwell " id="contact_form_container">
-	<%= form_for @message, :url => contact_path do |form| %>
-    	<div class="field">
-	      <%= form.label :name, "Name:" %>
-	      <%= form.text_field :name, :placeholder => "Name", :class=> "span5" %>
-	    </div>
-	    
-	    <div class="field">
-	      <%= form.label :email, "Email:" %>
-	      <%= form.text_field :email, :placeholder => "Email", :class=> "span5" %>
-	    </div>
-	    <div class="field">
-	      <%= form.label :subject, "Subject:"%>
-	      <%= form.text_field :subject, :placeholder => "Subject", :class=> "span5" %>
-	    </div>
-	    
-	    <div class="field">
-	      <%= form.label :body, "Message:" %>
-	      <%= form.text_area :body, :placeholder => "Message", :class=> "span5", :id => "contact_body_text_area" %>
-	    </div>
-	  
-	 	<div class="center">
-	    	<%= form.submit "Send", :class => "btn btn-large btn-info" %>
-	  	</div>
-	<% end %>
+<div class="pkwell" id="contact_outer">
+	<div id="contact_form_container">
+		<%= form_for @message, :url => contact_path do |form| %>
+	    	<div class="field">
+		      <%= form.label :name, "Name:" %>
+		      <%= form.text_field :name, :placeholder => "Name", :class=> "span5" %>
+		    </div>
+		    
+		    <div class="field">
+		      <%= form.label :email, "Email:" %>
+		      <%= form.text_field :email, :placeholder => "Email", :class=> "span5" %>
+		    </div>
+		    <div class="field">
+		      <%= form.label :subject, "Subject:"%>
+		      <%= form.text_field :subject, :placeholder => "Subject", :class=> "span5" %>
+		    </div>
+		    
+		    <div class="field">
+		      <%= form.label :body, "Message:" %>
+		      <%= form.text_area :body, :placeholder => "Message", :class=> "span5", :id => "contact_body_text_area" %>
+		    </div>
+		  
+		 	<div class="center">
+		    	<%= form.submit "Send", :class => "btn btn-large btn-info" %>
+		  	</div>
+		<% end %>
+	</div>	
 </div>	

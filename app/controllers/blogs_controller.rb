@@ -9,4 +9,7 @@ class BlogsController < ApplicationController
   def parkinson
   end
 
+  def dentist
+  end
+
 end

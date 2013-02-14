@@ -18,6 +18,8 @@ Putterking::Application.routes.draw do
   match '/blog/top-10-nostalgic-miniature-golf-obstacles', to: 'blogs#nostalgic', :as => 'nostalgic'
   match '/en/content/putting-away-parkinson’s', to: 'blogs#parkinson'
   match '/blog/putting-away-parkinson', to: 'blogs#parkinson', :as => 'parkinson'
+  match '/blog/dentist-precision', to: 'blogs#dentist', :as => 'dentist'
+  match '/en/content/dentist’s-precision', to: 'blogs#dentist'
   match '/blog', to: 'blogs#index'
   match 'contact' => 'contact#new', :as => 'contact', :via => :get
   match 'contact' => 'contact#create', :as => 'contact', :via => :post

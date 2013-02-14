@@ -24,6 +24,18 @@ Putterking::Application.routes.draw do
   match '/blog/adventures-crazy-world-minigolf-tour', to: 'blogs#crazy', :as => 'crazy'
   match '/en/content/insight-creativity-and-imagination', to: 'blogs#creativity'
   match '/blog/insight-creativity-and-imagination', to: 'blogs#creativity', :as => 'creativity'
+  match '/blog/putter-king-scavenger-hunt-riddle', to: 'blogs#riddle', :as => 'riddle'
+  match '/en/content/putter-king-scavenger-hunt-riddle-answer', to: 'blogs#riddle'
+  match '/blog/finger-pulse-minigolf-world', to: 'blogs#pulse', :as => 'pulse'
+  match '/en/content/finger-pulse-minigolf-world', to: 'blogs#pulse'
+  match '/blog/miniature-golf-down-under', to: 'blogs#under', :as => 'under'
+  match '/en/content/miniature-golf-down-under', to: 'blogs#under'
+  match '/blog/greatest-nutter-ever-hold-putter', to: 'blogs#nutter', :as => 'nutter'
+  match '/en/content/greatest-nutter-ever-hold-putter', to: 'blogs#nutter'
+  match '/blog/minigolf-machine', to: 'blogs#machine', :as => 'machine'
+  match '/en/content/minigolf-machine', to: 'blogs#machine'
+  match '/blog/minigolf-ninjas', to: 'blogs#ninjas', :as => 'ninjas'
+  match '/en/content/minigolf-ninjas', to: 'blogs#ninjas'
   match '/blog', to: 'blogs#index'
   match 'contact' => 'contact#new', :as => 'contact', :via => :get
   match 'contact' => 'contact#create', :as => 'contact', :via => :post

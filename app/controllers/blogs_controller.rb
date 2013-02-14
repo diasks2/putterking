@@ -18,4 +18,22 @@ class BlogsController < ApplicationController
   def creativity
   end
 
+  def riddle
+  end
+
+  def machine
+  end
+
+  def ninjas
+  end
+
+  def pulse
+  end
+
+  def riddle
+  end
+
+  def under
+  end
+
 end

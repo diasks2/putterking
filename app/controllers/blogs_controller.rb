@@ -12,4 +12,10 @@ class BlogsController < ApplicationController
   def dentist
   end
 
+  def crazy
+  end
+
+  def creativity
+  end
+
 end

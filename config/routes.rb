@@ -20,6 +20,10 @@ Putterking::Application.routes.draw do
   match '/blog/putting-away-parkinson', to: 'blogs#parkinson', :as => 'parkinson'
   match '/blog/dentist-precision', to: 'blogs#dentist', :as => 'dentist'
   match '/en/content/dentist’s-precision', to: 'blogs#dentist'
+  match '/en/content/adventures-crazy-world-minigolf-tour', to: 'blogs#crazy'
+  match '/blog/adventures-crazy-world-minigolf-tour', to: 'blogs#crazy', :as => 'crazy'
+  match '/en/content/insight-creativity-and-imagination', to: 'blogs#creativity'
+  match '/blog/insight-creativity-and-imagination', to: 'blogs#creativity', :as => 'creativity'
   match '/blog', to: 'blogs#index'
   match 'contact' => 'contact#new', :as => 'contact', :via => :get
   match 'contact' => 'contact#create', :as => 'contact', :via => :post
